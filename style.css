@@ -1,0 +1,25 @@
+#intro{
+  background-image: url(https://images.unsplash.com/photo-1534965656385-134872ab1b0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intro .col-lg-4{
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image{
+  height: 180px;
+  width: auto;
+}
+
+.small-brand-logo{
+  height: 50px;
+  width: auto;
+}
+
+.underline{
+  text-decoration: underline;
+}
