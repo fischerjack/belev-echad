@@ -8,21 +8,23 @@
     <title>Belev Echad - Honoring the Wounded Men and Women of the Israeli Defense Force</title>
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Font - Raleway -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"><img class="small-brand-logo" src="./images/lasolas.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+      <a class="navbar-brand mr-auto" href="#"><img class="smaller-brand-logo" src="./images/lasolas.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="intro">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Soldier Programs</a>
@@ -38,7 +40,7 @@
           </li>
         </ul>
       </div>
-      <a class="navbar-brand" href="#"><img class="small-brand-logo" src="./images/belev-echad.png" alt=""></a>
+      <a class="navbar-brand mr-auto" href="#"><img class="small-brand-logo" src="./images/belev-echad.png" alt=""></a>
     </nav>
     
     <div style="height: 50px;"></div>
@@ -70,35 +72,56 @@
           <div class="container-fluid">
             <div class="row mt-4 justify-content-around">
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="300" height="180" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <p class="m-2">Video 1 fills this entire box</p>
+                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="250" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
               </div>
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2018 Soldier Name?</p>
+                <p class="m-2">2018 Soldier Testimonial</p>
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
               </div>
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
-              </div>
-            </div>
-            <div class="row mt-4 justify-content-around">
-              <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="300" height="180" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-              </div>
-              <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
-              </div>
-              <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2019 Soldier Name?</p>                
+                <p class="m-2">2019 Soldier "About Me"</p>
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
               </div>
             </div>
             <div class="row mt-4 justify-content-around">
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="300" height="180" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <p class="m-2">Video 2 fills this entire box</p>
+                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="250" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
               </div>
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2018 Soldier Name?</p>                
+                <p class="m-2">2018 Soldier Testimonial</p>
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
               </div>
               <div class="col-lg-3 bg-dark rounded shadow-lg">
-                <img class="intro-image" src="./images/placeholder.jpg" alt="">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2019 Soldier Name?</p>                
+                <p class="m-2">2019 Soldier "About Me"</p>                
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
+              </div>
+            </div>
+            <div class="row mt-4 justify-content-around">
+              <div class="col-lg-3 bg-dark rounded shadow-lg">
+                <p class="m-2">Video 3 fills this entire box</p>
+                <iframe src="https://player.vimeo.com/video/301727801?title=0&amp;byline=0&amp;portrait=0" width="250" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <div class="col-lg-3 bg-dark rounded shadow-lg">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2018 Soldier Name?</p>                
+                <p class="m-2">2018 Soldier Testimonial</p>
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
+              </div>
+              <div class="col-lg-3 bg-dark rounded shadow-lg">
+                <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+                <p class="m-2">2019 Soldier Name?</p>                
+                <p class="m-2">2019 Soldier "About Me"</p>                
+                <button type="button" class="btn btn-info m-2" data-toggle="modal" data-target="#exampleModal">Launch Soldier Profile</button>
               </div>
             </div>
           </div>
@@ -106,7 +129,146 @@
       </div>
     </div>
 
+    <!-- Soldier Programs -->
+    <div id="soldier-programs" class="container-fluid bg-light">
+      <h2 class="pt-5 text-center underline"><strong>SOLDIER PROGRAMS</strong></h2>
+      <div class="row justify-content-center">
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2018 Soldier Name?</p>
+            <p class="m-2">2018 Soldier Testimonial</p>
+          </a>
+        </div>
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2018 Soldier Name?</p>
+            <p class="m-2">2018 Soldier Testimonial</p>
+          </a>
+        </div>
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2018 Soldier Name?</p>
+            <p class="m-2">2018 Soldier Testimonial</p>
+          </a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2019 Soldier Name?</p>                
+            <p class="m-2">2019 Soldier "About Me"</p>                
+          </a>
+        </div>
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2019 Soldier Name?</p>                
+            <p class="m-2">2019 Soldier "About Me"</p>                
+          </a>
+        </div>
+        <div class="col-2 mt-5 mx-2 border border-dark rounded">
+          <a class="text-decoration-none text-dark" href="" data-toggle="modal" data-target="#exampleModal">
+            <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+            <p class="m-2">2019 Soldier Name?</p>                
+            <p class="m-2">2019 Soldier "About Me"</p>                
+          </a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-6 pb-5">
+          <h3 class="text-center underline mt-5">HONORING THE WOUNDED MEN AND WOMEN OF THE IDF</h3>
+          <p>Belev Echad is a global movement dedicated to ensuring the wounded men and women
+             of the Israeli Defense Forces receive the support they need to live productive
+              and well-adjusted lives. With programs that include legal and medical advocacy, 
+              educational scholarships, social and recreational events, mentorships and career 
+              placement, we empower each soldier to thrive. </p>
+        </div>
+      </div>
 
+      <!-- Explaining Soldier Program -->
+      
+    </div>
+    <!-- Getting Involved -->
+    <div id="getting-involved" class="container-fluid bg-dark text-white">
+      <div class="row justify-content-center pt-5">
+        <div class="col-3 pb-4">
+          <h2 class="text-center underline"><strong>VOLUNTEER</strong></h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-6">
+            <form>
+              <div class="form-group">
+                <label for="exampleName">Full Name</label>
+                <input type="text" class="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="Enter Full Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How would you like to help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
+        </div>
+        <div class="w-100"></div>
+      </div>
+    </div>
+    <!-- Meet the Soldiers -->
+    <div id="meet-the-soldiers" class="container-fluid">
+      <div class="row">
+        
+      </div>
+    </div>
+    <!-- Contact Us -->
+    <div id="contact-us" class="container-fluid">
+      <div class="row">
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Modals -->
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soldier Profile</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="intro-image m-2 rounded" src="./images/placeholder.jpg" alt="">
+              <p class="m-2">Things that will go in this pop-up</p>
+              <ul class="m-2">
+                <li>Soldier Name</li>
+                <li>About Soldier</li>
+                <li>What their experience was like last year OR What they are looking forward to this year...</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Bootstrap 4 JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
