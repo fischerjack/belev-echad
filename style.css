@@ -12,11 +12,22 @@ nav div a:hover{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+}
+
+#intro a{
+  text-decoration: none;
+  color: white;
 }
 
 #intro .col-lg-4{
   display: flex;
   justify-content: center;
+}
+
+#meet-the-soldiers a{
+  text-decoration: none;
+  color: #343a40;
 }
 
 .composite{
