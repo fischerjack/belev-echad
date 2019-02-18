@@ -19,8 +19,18 @@ nav div a:hover{
   justify-content: center;
 }
 
+.composite{
+  height: 200px;
+  width: auto;
+}
+
 .intro-image{
   height: 180px;
+  width: auto;
+}
+
+.soldier-image{
+  height: 80px;
   width: auto;
 }
 
