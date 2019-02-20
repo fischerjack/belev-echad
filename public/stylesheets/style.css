@@ -1,18 +1,14 @@
 body{
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
-nav div a:hover{
-  background: #17a2b8;
-  border-radius: 5px;
-}
 
 #intro{
   background-image: url(https://images.unsplash.com/photo-1534965656385-134872ab1b0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 #intro a{
@@ -38,6 +34,10 @@ nav div a:hover{
 .intro-image{
   height: 180px;
   width: auto;
+}
+
+.nav-pills .nav-link.active{
+  background: #17a2b8;
 }
 
 .soldier-image{

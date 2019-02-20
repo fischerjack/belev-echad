@@ -11,4 +11,7 @@ $(document).on('change', '.volunteerFormSelector', function() {
 //On load, unhide default form
 $(document).ready(() => {
     $('.volunteerFormSelector').trigger('change');
-  });
+    $('[data-toggle="modal"][title]').tooltip();
+});
+
+

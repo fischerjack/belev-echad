@@ -1,10 +1,11 @@
 {
   "name": "belev-echad",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "DEBUG=starter-code:* nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/fischerjack/belev-echad/issues"
   },
-  "homepage": "https://github.com/fischerjack/belev-echad#readme"
+  "homepage": "https://github.com/fischerjack/belev-echad#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.2.10",
+    "morgan": "^1.9.0",
+    "node-sass-middleware": "^0.11.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
