@@ -1,0 +1,62 @@
+<div class="col-6 d-none host volunteerSubForm">
+  <h3>HOST A SOLDIER</h3>
+  <form>
+    <div class="form-group">
+      <label for="hostName">Full Name</label>
+      <input type="text" class="form-control" id="hostName" aria-describedby="hostNameHelp" placeholder="Enter Full Name" required="true">
+    </div>
+    <div class="form-group">
+      <label for="hostPhone">Phone Number</label>
+      <input type="tel" class="form-control" id="hostPhone" aria-describedby="hostingPhoneHelp" placeholder="Enter Phone Number" required="true">
+      <small id="hostPhoneHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="hostEmail">Email Address</label>
+      <input type="email" class="form-control" id="hostEmail" aria-describedby="hostEmailHelp" placeholder="Enter Email" required="true">
+      <small id="hostEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="hostDay">Date</label>
+      <br>
+      <select class="form-control" name="hostDay" id="hostDay" required="true">
+        <option value="04-01-2019">April 1st, 2019</option>
+        <option value="04-02-2019">April 2nd, 2019</option>
+        <option value="04-03-2019">April 3rd, 2019</option>
+        <option value="04-04-2019">April 4th, 2019</option>
+        <option value="04-05-2019">April 5th, 2019</option>
+        <option value="04-06-2019">April 6th, 2019</option>
+        <option value="04-07-2019">April 7th, 2019</option>
+        <option value="04-08-2019">April 8th, 2019</option>
+        <option value="04-09-2019">April 9th, 2019</option>
+        <option value="04-10-2019">April 10th, 2019</option>
+      </select>
+    </div>
+    <div class="form-group" id="mealCheck">
+      <label for="mealCheck">Which meals will you host?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="breakfast" id="breakfastCheck" checked="true">
+        <label class="form-check-label" for="breakfastCheck">
+          Breakfast
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="lunch" id="lunchCheck">
+        <label class="form-check-label" for="lunchCheck">
+          Lunch
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="dinner" id="dinnerCheck">
+        <label class="form-check-label" for="dinnerCheck">
+          Dinner
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="hostingMessage">Message</label>
+        <textarea class="form-control" id="hostingMessage" rows="3" placeholder="Please describe how you'd like to help." required="true"></textarea>
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+</div>
+<div class="w-100"></div>

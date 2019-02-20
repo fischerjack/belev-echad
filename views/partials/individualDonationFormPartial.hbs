@@ -1,0 +1,61 @@
+<div class="col-6 d-none donate volunteerSubForm">
+  <h3>INDIVIDUAL DONATION</h3>
+  <form>
+    <div class="form-group">
+      <label for="donationFirstName">First Name</label>
+      <input type="text" class="form-control" id="donationFirstName" aria-describedby="donationFirstNameHelp" placeholder="Enter First Name" required="true">
+    </div>
+    <div class="form-group">
+      <label for="donationLastName">Last Name</label>
+      <input type="text" class="form-control" id="donationLastName" aria-describedby="donationLastNameHelp" placeholder="Enter Last Name" required="true">
+    </div>
+    <div class="form-group">
+      <label for="donationPhone">Phone Number</label>
+      <input type="tel" class="form-control" id="donationPhone" aria-describedby="donationPhoneHelp" placeholder="Enter Phone Number" required="true">
+      <small id="donationPhoneHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="donationEmail">Email Address</label>
+      <input type="email" class="form-control" id="donationEmail" aria-describedby="donationEmailHelp" placeholder="Enter Email" required="true">
+      <small id="donationEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group" id="donationLevel">
+      <label for="donationLevel">Choose a Donation Level:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="donationRadios" id="platinumRadio" value="platinum" checked="true">
+        <label class="form-check-label" for="platinumRadio">
+          Platinum: $25,000
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="donationRadios" id="goldRadio" value="gold">
+        <label class="form-check-label" for="goldRadio">
+          Gold: $10,000
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="donationRadios" id="silverRadio" value="silver">
+        <label class="form-check-label" for="silverRadio">
+          Silver: $5,000
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="donationRadios" id="goldRadio" value="circle">
+        <label class="form-check-label" for="circleRadio">
+          Circle: $2,500
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="donationRadios" id="friendRadio" value="friend">
+        <label class="form-check-label" for="friendRadio"></label>
+          Friend: $180
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="donationMessage">Message</label>
+        <textarea class="form-control" id="donationMessage" rows="3" placeholder="If you'd like to attach a message to this donation, you can do so here."></textarea>
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+</div>
