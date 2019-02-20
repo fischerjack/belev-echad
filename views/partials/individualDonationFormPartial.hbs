@@ -1,22 +1,22 @@
 <div class="col-6 d-none donate volunteerSubForm">
   <h3>INDIVIDUAL DONATION</h3>
-  <form>
+  <form action="/donate" method="POST">
     <div class="form-group">
       <label for="donationFirstName">First Name</label>
-      <input type="text" class="form-control" id="donationFirstName" aria-describedby="donationFirstNameHelp" placeholder="Enter First Name" required="true">
+      <input type="text" class="form-control" name="donationFirstName" id="donationFirstName" aria-describedby="donationFirstNameHelp" placeholder="Enter First Name" required="true">
     </div>
     <div class="form-group">
       <label for="donationLastName">Last Name</label>
-      <input type="text" class="form-control" id="donationLastName" aria-describedby="donationLastNameHelp" placeholder="Enter Last Name" required="true">
+      <input type="text" class="form-control" name="donationLastName" id="donationLastName" aria-describedby="donationLastNameHelp" placeholder="Enter Last Name" required="true">
     </div>
     <div class="form-group">
       <label for="donationPhone">Phone Number</label>
-      <input type="tel" class="form-control" id="donationPhone" aria-describedby="donationPhoneHelp" placeholder="Enter Phone Number" required="true">
+      <input type="tel" class="form-control" name="donationPhone" id="donationPhone" aria-describedby="donationPhoneHelp" placeholder="Enter Phone Number" required="true">
       <small id="donationPhoneHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
     </div>
     <div class="form-group">
       <label for="donationEmail">Email Address</label>
-      <input type="email" class="form-control" id="donationEmail" aria-describedby="donationEmailHelp" placeholder="Enter Email" required="true">
+      <input type="email" class="form-control" name="donationEmail" id="donationEmail" aria-describedby="donationEmailHelp" placeholder="Enter Email" required="true">
       <small id="donationEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group" id="donationLevel">
@@ -40,7 +40,7 @@
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="donationRadios" id="goldRadio" value="circle">
+        <input class="form-check-input" type="radio" name="donationRadios" id="circleRadio" value="circle">
         <label class="form-check-label" for="circleRadio">
           Circle: $2,500
         </label>
@@ -54,8 +54,9 @@
     </div>
     <div class="form-group">
         <label for="donationMessage">Message</label>
-        <textarea class="form-control" id="donationMessage" rows="3" placeholder="If you'd like to attach a message to this donation, you can do so here."></textarea>
+        <textarea class="form-control" name="donationMessage" id="donationMessage" rows="3" placeholder="If you'd like to attach a message to this donation, you can do so here."></textarea>
     </div>
     <button type="submit" class="btn btn-info">Submit</button>
   </form>
 </div>
+<div class="w-100"></div>
