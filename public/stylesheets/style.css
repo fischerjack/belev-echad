@@ -3,6 +3,26 @@ body{
   position: relative;
 }
 
+
+
+#flag1{
+  background-image: url(../images/Flag_of_Israel.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+
+#flag2{
+  background-image: url(../images/Flag_of_the_United_States.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+
 #foot{
   height: 50px;
   width: 100%;
@@ -10,7 +30,6 @@ body{
   justify-content: flex-end;
   align-items: center;
 }
-
 
 #foot i{
   padding-right:2rem;
@@ -92,11 +111,53 @@ body{
   border-radius: 15px;
 }
 
-
-
-.composite{
-  height: 200px;
-  width: auto;
+#soldierTop1{
+  background-image: url(../images/adir-seroya.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+#soldierTop2{
+  background-image: url(../images/raz-budany.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+#soldierTop3{
+  background-image: url(../images/binyamin-michael-persky.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+#soldierTop4{
+  background-image: url(../images/haviv-levi.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+#soldierTop5{
+  background-image: url(../images/aminadav-hamo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+#soldierTop6{
+  background-image: url(../images/yakir-amiri.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
 }
 
 .intro-image{
