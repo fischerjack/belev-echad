@@ -1,6 +1,3 @@
-
-
-
 <div id="intro" class="container-fluid text-white">
   <div class="row justify-content-center">
 
@@ -88,50 +85,55 @@
 </div>
 
 <div id="soldier-programs" class="container-fluid bg-light pb-5">
-  <h2 class="pt-5 text-center underline"><strong>10 DAYS OF SOLDIER PROGRAMMINGS</strong></h2>
-  <div class="row justify-content-center align-items-center">
+  
+  <div class="row justify-content-around align-items-center">
 
     <!-- Explaining Soldier Program -->
-    <div class="col-3"></div>
+
+
+    <div class="col-2">
+      <div id="program-photo-div-1" class="my-1"></div>
+      <div id="program-photo-div-2" class="my-1"></div>
+      <div id="program-photo-div-3" class="my-1"></div>
+    </div>
     <div class="col-6 pb-5">
+      <h2 class="pt-5 text-center underline"><strong>10 DAYS OF SOLDIER PROGRAMMINGS</strong></h2>
       <h3 class="text-center underline mt-5">HONORING THE WOUNDED MEN AND WOMEN OF THE IDF</h3>
       <p class="text-justify">Belev Echad is a global movement dedicated to ensuring the wounded men and women
           of the Israeli Defense Forces receive the support they need to live productive
           and well-adjusted lives. With programs that include legal and medical advocacy, 
           educational scholarships, social and recreational events, mentorships and career 
-          placement, we empower each soldier to thrive. </p>
+          placement, we empower each soldier to thrive.
+      </p>
+    <div class="container-fluid">
+      <!-- Soldier Program List -->
+      <div class="row">
+        <div class="col-md-6 soldier-bullets">
+          <ul>
+            <li>Emotional Healing Through Storytelling</li>
+            <li>Building Relationships in Florida</li>
+            <li>Learning American Values About Israel</li>
+            <li>Openly Sharing Experiences from Israel</li>
+            <li>New American/Israeli Friendships</li>
+          </ul>
+        </div>
+        <div class="col-md-6 soldier-bullets">
+          <ul>
+            <li>Day Cruise on a Yacht and Jet Skiing </li>
+            <li>Miami Heat Basketball Game</li>
+            <li>Ft Lauderdale Pub Crawl and Dinner</li>
+            <li>Community Theme Party</li>
+            <li>Beach Volleyball Party</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="col-3 text-center">
-      <img class="composite rounded" src="./images/belev-echad-composite.jpg" alt="">
     </div>
-    <div class="w-100"></div>
-    <div class="col-3">
-      <img src="./images/belev-echad1.jpg" alt="">
+    <div class="col-2">
+      <div id="program-photo-div-4" class="my-1"></div>
+      <div id="program-photo-div-5" class="my-1"></div>
+      <div id="program-photo-div-6" class="my-1"></div>
     </div>
-    <!-- Soldier Program List -->
-    <div class="col-md-3 soldier-bullets" style="font-size: 0.8rem">
-      <ul>
-        <li>Emotional Healing Through Storytelling</li>
-        <li>Building Relationships in Florida</li>
-        <li>Learning American Values Toward Israel</li>
-        <li>Openly Sharing Experiences from Israel</li>
-        <li>New American/Israeli Friendships</li>
-      </ul>
-    </div>
-    <div class="col-md-3 soldier-bullets" style="font-size: 0.8rem">
-      <ul>
-        <li>Day Cruise on a Yacht and Jet Skiing </li>
-        <li>Miami Heat Basketball Game</li>
-        <li>Ft Lauderdale Pub Crawl and Dinner</li>
-        <li>Community Theme Party</li>
-        <li>Beach Volleyball Party</li>
-      </ul>
-    </div>
-    <div class="col-3">
-
-    </div>
-    <div class="w-100"></div>
-
   </div>
 </div>
 
@@ -143,7 +145,7 @@
     <div class="w-100"></div>
 
     <!-- Form Selector -->
-    <div class="col-6">
+    {{!-- <div class="col-6">
       <label for="volunteerFormDropdown">Choose a Way to Assist from the Dropdown Menu:</label>
       <select id="volunteerFormDropdown" class="form-control form-control-lg mb-5 volunteerFormSelector" data-target=".volunteerSubForm">
         <option value="sponsor" data-show=".sponsor">Corporate Sponsorships</option>
@@ -151,24 +153,18 @@
         <option value="donate" data-show=".donate">Individual Donation</option>
       </select>
     </div>
-    <div class="w-100"></div>
+    <div class="w-100"></div> --}}
 
-    {{> hostFormPartial}}
-    
     {{> corporateSponsorshipFormPartial}}
     
     {{> individualDonationFormPartial}}
 
-    {{#if success}}
-      <br>
-      <br>
-      <p class="bg-success p-2" style="border-radius: 5px;">THANK YOU! THE FORM WAS SUBMITTED SUCCESSFULLY!</p>
-    {{/if}}
-    
+    {{> hostFormPartial}}
+
   </div>
 </div>
 
-<div id="meet-the-soldiers" class="container-fluid">
+<div id="meet-the-soldiers" class="container-fluid bg-light">
   <h2 class="py-5 text-center underline"><strong>MEET THE SOLDIERS</strong></h2>
 
   <div class="row justify-content-center">
@@ -223,7 +219,7 @@
     <div class="w-100"></div>
     
 
-    <div class="col-6">
+    {{!-- <div class="col-6">
       <label for="formDropdown">Choose an Event to Attend from the Dropdown Menu:</label>
       <select id="formDropdown" class="form-control form-control-lg mb-5 volunteerFormSelector" data-target=".eventSubForm">
         <option value="fridayDinner" data-show=".fridayDinner">Community Friday Night Dinner - Friday, April 5th</option>
@@ -231,7 +227,7 @@
         <option value="otherEvent" data-show=".otherEvent">Other Event</option>
       </select>
     </div>
-    <div class="w-100"></div>
+    <div class="w-100"></div> --}}
 
     {{> dinnerAttendeeFormPartial}}
 
@@ -241,6 +237,15 @@
 
 
   </div>
+</div>
+<div id="foot" class="bg-light">
+  <p class="mb-0 ml-2 mr-auto">Las Olas Chabad © 2019</p>
+  <a href="https://www.facebook.com/LasOlasChabadJewishCenter/">
+    <i class="fab fa-facebook-square fa-2x"></i>
+  </a>
+  <a href="https://www.instagram.com/lasolasjewishcenter/">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
 </div>
 
 

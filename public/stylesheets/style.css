@@ -3,6 +3,18 @@ body{
   position: relative;
 }
 
+#foot{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+#foot i{
+  padding-right:2rem;
+}
 
 #intro{
   background-image: url(https://images.unsplash.com/photo-1534965656385-134872ab1b0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
@@ -26,6 +38,62 @@ body{
   color: #343a40;
 }
 
+#program-photo-div-1{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad1.jpe); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#program-photo-div-2{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad2.jpg); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#program-photo-div-3{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad3.jpg); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#program-photo-div-4{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad4.jpg); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#program-photo-div-5{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad5.jpg); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#program-photo-div-6{
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/belev-echad6.jpg); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+
 .composite{
   height: 200px;
   width: auto;
@@ -45,7 +113,7 @@ body{
   width: auto;
 }
 
-.solder-bullets{
+.soldier-bullets{
     font-size: 0.80rem;
 }
 

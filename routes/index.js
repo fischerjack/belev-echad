@@ -9,8 +9,7 @@ const soldiers2018 = require('../bin/soldierData2018');
 
 
 router.get('/', (req, res, next) => {
-  let success = {success: req.query.success};
-  res.render('index', {soldiers2019, soldiers2018, success});
+  res.render('index', {soldiers2019, soldiers2018});
 });
 
 router.post('/host', (req, res, next) => {
@@ -44,7 +43,7 @@ router.post('/host', (req, res, next) => {
   })
     .then(info => {
       console.log(info);
-      res.redirect('/?success=true');
+      res.redirect('/');
     })
     .catch(err => {console.log(err);});
   
@@ -85,7 +84,7 @@ router.post('/sponsor', (req, res, next) => {
   })
     .then(info => {
       console.log(info);
-      res.redirect('/?success=true');
+      res.redirect('/');
     })
     .catch(err => {console.log(err);});
   
@@ -120,7 +119,7 @@ router.post('/donate', (req, res, next) => {
   })
     .then(info => {
       console.log(info);
-      res.redirect('/?success=true');
+      res.redirect('/');
     })
     .catch(err => {console.log(err);});
   
