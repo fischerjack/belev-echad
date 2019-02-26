@@ -144,8 +144,8 @@
 
 <div id="getting-involved" class="container-fluid bg-dark text-white">
   <div class="row justify-content-center py-5">
-    <div class="col-3 pb-4">
-      <h2 class="text-center underline"><strong>VOLUNTEER</strong></h2>
+    <div class="col-6">
+      <h2 class="text-center underline"><strong>GETTING INVOLVED</strong></h2>
     </div>
     <div class="w-100"></div>
 
@@ -160,11 +160,49 @@
     </div>
     <div class="w-100"></div> --}}
 
-    {{> corporateSponsorshipFormPartial}}
+    <div class="col-6 pt-5 d-flex flex-wrap justify-content-center">
+      <h3>CORPORATE SPONSORSHIPS</h3>
+      <p class="text-justify">We are bringing 12 wounded soldiers to South Florida and hosting 
+        them for 10 days and need your help. To bring these wounded Israeli 
+        soldiers into our community is a mitzvah which takes funding. 
+        Please help us by contributing directly to helping the soldiers 
+        experience South Florida by becoming a Corporate Sponsor. We have 
+        multiple levels of sponsorships where you and your company or organization 
+        can make a real difference in the healing process of Israeli soldiers 
+        fighting to protect the Jewish state.
+      </p>
+      <a href="https://secure.usaepay.com/interface/epayform/PKvj4yG8AnYrPOYZNEC9ga5WTdcQQOrJ/" class="btn btn-info btn-lg">
+        Click Here to Sponsor
+      </a>
+      
+    </div>
+    <div class="w-100"></div>
+    <div class="col-6 pt-5 d-flex flex-wrap justify-content-center">
+      <h3>INDIVIDUAL DONATIONS</h3>
+      <p class="text-justify">Your donations are an important way to show just how much you care 
+        about helping the wounded soldiers of the IDF that we are bringing 
+        to our Las Olas and South Florida community. Bringing them to America 
+        and hosting them here in Ft Lauderdale to meet our community families takes resources. 
+        PLEASE donate and help us show them a great time Florida style. 
+      </p>
+      <a href="https://secure.usaepay.com/interface/epayform/QCdZPd6AO85NQZMajPEZvqGCbcIcPUab/" class="btn btn-info btn-lg">Click Here to Donate</a>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-6 pt-5 d-flex flex-wrap justify-content-center">
+      <h3>VOLUNTEERS NEEDED</h3>
+      <p class="text-justify">We need volunteers from our community to help us with the programming and 
+        events for our honored wounded Israeli Soldier guests. Help us welcome these 
+        young men and woman of the IDF. Let’s us know what you would like 
+        to do during their 10 day stay.
+      </p>
+      <a href="" data-toggle="modal" data-target="#volunteerModal" class="btn btn-info btn-lg">Click Here to Volunteer</a>
+    </div>
+    <div class="w-100"></div>
+    {{!-- {{> corporateSponsorshipFormPartial}} --}}
     
-    {{> individualDonationFormPartial}}
+    {{!-- {{> individualDonationFormPartial}} --}}
 
-    {{> hostFormPartial}}
+    {{!-- {{> hostFormPartial}} --}}
 
   </div>
 </div>
@@ -262,3 +300,21 @@
   {{> soldierModalPartial this}}
 {{/each}}
 
+<div class="modal fade" id="volunteerModal" tabindex="-1" role="dialog" aria-labelledby="volunteerModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="volunteerModalLabel">Volunteer Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{> hostFormPartial}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
