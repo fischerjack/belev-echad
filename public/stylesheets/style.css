@@ -3,6 +3,33 @@ body{
   position: relative;
 }
 
+#alibaba1{
+  background-image: url(../images/alibaba1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 100%;
+  border-radius: 15px;
+}
+#alibaba2{
+  background-image: url(../images/alibaba2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 100%;
+  border-radius: 15px;
+}
+#alibaba3{
+  background-image: url(../images/alibaba3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 100%;
+  border-radius: 15px;
+}
 
 
 #flag1{
@@ -33,6 +60,10 @@ body{
 
 #foot i{
   padding-right:2rem;
+}
+
+#foot a{
+  color:#17a2b8;
 }
 
 #intro{
@@ -169,14 +200,7 @@ body{
   background: #17a2b8;
 }
 
-.soldier-image{
-  height: 80px;
-  width: auto;
-}
 
-.soldier-bullets{
-    font-size: 0.80rem;
-}
 
 .small-brand-logo{
   height: 50px;
@@ -187,7 +211,17 @@ body{
   height: 30px;
   width: auto;
 }
+.soldier-image{
+  height: 80px;
+  width: auto;
+}
 
+.soldier-bullets{
+    font-size: 0.80rem;
+}
+.sponsor-logo{
+  width: 100%;
+}
 .underline{
   text-decoration: underline;
 }
