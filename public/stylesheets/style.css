@@ -31,24 +31,43 @@ body{
   border-radius: 15px;
 }
 
+#belev-echad-logo{
+  display: none;
+}
 
 #flag1{
-  background-image: url(../images/Flag_of_Israel.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 100%;
+  display: none;
+}
+#flag2{
+  display: none;
 }
 
-#flag2{
-  background-image: url(../images/Flag_of_the_United_States.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 100%;
+@media screen and (min-width: 1199px){
+  #belev-echad-logo{
+    display: inline;
+  }
+  #flag1{
+    background-image: url(../images/Flag_of_Israel.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    display: block;
+  }
+
+  #flag2{
+    background-image: url(../images/Flag_of_the_United_States.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    display: block;
+  }
 }
+
+
 
 #foot{
   height: 50px;
