@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ path: require('find-config')('.env') });
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
@@ -142,7 +142,7 @@ router.post('/host', (req, res, next) => {
 //       <p>Message: ${donationMessage}</p>
 //       ` 
 //   })
-//     .then(info => {
+//     .then(info => {x
 //       console.log(info);
 //       res.redirect('/');
 //     })
