@@ -40,7 +40,7 @@ router.post('/host', (req, res, next) => {
     driveCheck = 'yes';
   }
   let transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: process.env.MAIL_PROVIDER,
     auth: {
       user: process.env.NODEMAILER_ADDRESS,
       pass: process.env.NODEMAILER_PASSWORD
@@ -48,8 +48,8 @@ router.post('/host', (req, res, next) => {
   
   });
   transporter.sendMail({
-    from: '"Israel Heart2Heart" <jrfisch95@gmail.com>',
-    to: 'rabbi@jewishfll.com ',
+    from: '"Israel Heart2Heart" <'+ process.env.NODEMAILER_ADDRESS + '>',
+    to: 'rabbi@jewishfll.com',
     cc:'jrfisch95@gmail.com',
     subject: 'Volunteer Form Submission',
     text: '',
