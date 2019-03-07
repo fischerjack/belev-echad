@@ -1,7 +1,7 @@
 require('dotenv').config({ path: require('find-config')('.env') });
 const express = require('express');
 const router = express.Router();
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 
 const soldiers2019 = require('../bin/soldierData2019');
 const soldiers2018 = require('../bin/soldierData2018');
@@ -39,39 +39,109 @@ router.post('/host', (req, res, next) => {
   } else{
     driveCheck = 'yes';
   }
-  let transporter = nodemailer.createTransport({
-    service: process.env.MAIL_PROVIDER,
-    auth: {
-      user: process.env.NODEMAILER_ADDRESS,
-      pass: process.env.NODEMAILER_PASSWORD
-    }
+  // let transporter = nodemailer.createTransport({
+  //   service: process.env.MAIL_PROVIDER,
+  //   auth: {
+  //     user: process.env.NODEMAILER_ADDRESS,
+  //     pass: process.env.NODEMAILER_PASSWORD
+  //   }
   
-  });
-  transporter.sendMail({
-    from: '"Israel Heart2Heart" <'+ process.env.NODEMAILER_ADDRESS + '>',
-    to: 'rabbi@jewishfll.com',
-    cc:'jrfisch95@gmail.com',
-    subject: 'Volunteer Form Submission',
-    text: '',
+  // });
+  // transporter.sendMail({
+  //   from: '"Israel Heart2Heart" <'+ process.env.NODEMAILER_ADDRESS + '>',
+  //   to: 'rabbi@jewishfll.com',
+  //   cc:'jrfisch95@gmail.com',
+  //   subject: 'Volunteer Form Submission',
+  //   text: '',
+  //   html: `
+  //     <p>Host Name: ${hostName}</p>
+  //     <p>Host Phone: ${hostPhone}</p>
+  //     <p>Host Email: ${hostEmail}</p>
+  //     <p>Host Day: ${hostDay}</p>
+  //     <p>Host a few Soldiers for Breakfast: ${breakfastCheck}</p>
+  //     <p>Host a few Soldiers for Dinner: ${dinnerCheck}</p>
+  //     <p>Plan and Work Events: ${workCheck}</p>
+  //     <p>Obtain Silent Auction Gifts/Donations: ${auctionCheck}</p>
+  //     <p>Drive Soldiers When Needed: ${driveCheck}</p>
+  //     <p>Message: ${hostMessage}</p>
+  //     ` 
+  // })
+  //   .then(info => {
+  //     console.log(info);
+  //     res.redirect('/');
+  //   })
+  //   .catch(err => {console.log(err);});
+  
+  const sgMail = require('@sendgrid/mail');
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const msg1 = {
+    to: `jrfisch95@gmail.com`,
+    from: 'donotreply@israelheart2heart.com',
+    subject: 'Israel Heart2Heart - Volunteering Form Submission',
     html: `
-      <p>Host Name: ${hostName}</p>
-      <p>Host Phone: ${hostPhone}</p>
-      <p>Host Email: ${hostEmail}</p>
-      <p>Host Day: ${hostDay}</p>
-      <p>Host a few Soldiers for Breakfast: ${breakfastCheck}</p>
-      <p>Host a few Soldiers for Dinner: ${dinnerCheck}</p>
-      <p>Plan and Work Events: ${workCheck}</p>
-      <p>Obtain Silent Auction Gifts/Donations: ${auctionCheck}</p>
-      <p>Drive Soldiers When Needed: ${driveCheck}</p>
-      <p>Message: ${hostMessage}</p>
-      ` 
-  })
-    .then(info => {
-      console.log(info);
-      res.redirect('/');
+          <p>Host Name: ${hostName}</p>
+          <p>Host Phone: ${hostPhone}</p>
+          <p>Host Email: ${hostEmail}</p>
+          <p>Host Day: ${hostDay}</p>
+          <p>Host a few Soldiers for Breakfast: ${breakfastCheck}</p>
+          <p>Host a few Soldiers for Dinner: ${dinnerCheck}</p>
+          <p>Plan and Work Events: ${workCheck}</p>
+          <p>Obtain Silent Auction Gifts/Donations: ${auctionCheck}</p>
+          <p>Drive Soldiers When Needed: ${driveCheck}</p>
+          <p>Message: ${hostMessage}</p>
+          `
+  };
+  const msg2 = {
+    to: `rabbi@jewishfll.com`,
+    from: 'donotreply@israelheart2heart.com',
+    subject: 'Israel Heart2Heart - Volunteering Form Submission',
+    html: `
+          <p>Host Name: ${hostName}</p>
+          <p>Host Phone: ${hostPhone}</p>
+          <p>Host Email: ${hostEmail}</p>
+          <p>Host Day: ${hostDay}</p>
+          <p>Host a few Soldiers for Breakfast: ${breakfastCheck}</p>
+          <p>Host a few Soldiers for Dinner: ${dinnerCheck}</p>
+          <p>Plan and Work Events: ${workCheck}</p>
+          <p>Obtain Silent Auction Gifts/Donations: ${auctionCheck}</p>
+          <p>Drive Soldiers When Needed: ${driveCheck}</p>
+          <p>Message: ${hostMessage}</p>
+          `
+  };
+  const msg3 = {
+    to: `${hostEmail}`,
+    from: 'donotreply@israelheart2heart.com',
+    subject: 'Israel Heart2Heart - Volunteering Form Submission',
+    html: `
+          <p>Host Name: ${hostName}</p>
+          <p>Host Phone: ${hostPhone}</p>
+          <p>Host Email: ${hostEmail}</p>
+          <p>Host Day: ${hostDay}</p>
+          <p>Host a few Soldiers for Breakfast: ${breakfastCheck}</p>
+          <p>Host a few Soldiers for Dinner: ${dinnerCheck}</p>
+          <p>Plan and Work Events: ${workCheck}</p>
+          <p>Obtain Silent Auction Gifts/Donations: ${auctionCheck}</p>
+          <p>Drive Soldiers When Needed: ${driveCheck}</p>
+          <p>Message: ${hostMessage}</p>
+          `
+  };
+  sgMail.send(msg1)
+    .then(info1 => {
+      console.log(info1);
+      sgMail.send(msg2)
+        .then(info2 => {
+          console.log(info2);
+          sgMail.send(msg3)
+            .then(info3 => {
+              console.log(info3);
+              res.redirect('/');
+            })
+            .catch(err => console.log(err));
+        })
+        .catch(err => console.log(err));
     })
-    .catch(err => {console.log(err);});
-  
+    .catch(err => console.log(err));
+
 });
 
 // router.post('/sponsor', (req, res, next) => {
