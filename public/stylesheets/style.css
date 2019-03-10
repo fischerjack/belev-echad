@@ -65,6 +65,8 @@ body{
     width: 100%;
     display: block;
   }
+
+
 }
 
 
@@ -210,6 +212,57 @@ body{
   border-radius: 15px;
 }
 
+@media (min-width: 768px) and (max-width: 991px){ 
+  #soldierTop1{
+    background-image: url(../images/adir-seroya.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  #soldierTop2{
+    background-image: url(../images/raz-budany.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  #soldierTop3{
+    background-image: url(../images/binyamin-michael-persky.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  #soldierTop4{
+    background-image: url(../images/haviv-levi.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  #soldierTop5{
+    background-image: url(../images/aminadav-hamo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  #soldierTop6{
+    background-image: url(../images/yakir-amiri.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+  }
+}
+
 .intro-image{
   height: 180px;
   width: auto;
@@ -218,8 +271,6 @@ body{
 .nav-pills .nav-link.active{
   background: #17a2b8;
 }
-
-
 
 .small-brand-logo{
   height: 50px;
@@ -238,8 +289,18 @@ body{
 .soldier-bullets{
     font-size: 0.80rem;
 }
+
 .sponsor-logo{
   width: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 992px){
+  .sponsor-logo.greenpoint{
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .underline{
