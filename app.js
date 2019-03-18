@@ -59,7 +59,7 @@ hbs.registerHelper('if_odd', function(conditional, options) {
 });
 
 // default value for title local
-app.locals.title = 'Belev Echad - Honoring the Wounded Men and Women of the Israeli Defense Force';
+app.locals.title = 'Israel Heart2Heart - Honoring the Wounded Men and Women of the Israeli Defense Force';
 
 
 
